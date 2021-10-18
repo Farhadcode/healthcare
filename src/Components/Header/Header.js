@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import Banner from '../Banner/Banner';
 import NavBar from '../NavBar/NavBar';
 import './Header.css'
 
@@ -53,7 +54,8 @@ const Header = () => {
                         <p>Optometrist & eayes care specialist</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>v
+            </Carousel>
+            <Banner></Banner>
         </div>
     );
 };

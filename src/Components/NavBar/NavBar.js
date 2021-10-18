@@ -7,7 +7,7 @@ import './NavBar.css'
 const NavBar = () => {
     return (
         <>
-            <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg">
+            <Navbar className="navbar" bg="light" variant="light" sticky="top" collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand className="logo-style" href="#home"><img src={Logo} alt="" width="60" height="60" />Optilica</Navbar.Brand>
                     <Navbar.Toggle />
