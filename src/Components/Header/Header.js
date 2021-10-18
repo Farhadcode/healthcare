@@ -10,6 +10,9 @@ const Header = () => {
             <Carousel >
 
                 <Carousel.Item>
+
+
+
                     <img
                         className="d-block w-100"
                         src="https://i.ibb.co/JrSY9bY/banner-1.jpg"
@@ -21,6 +24,9 @@ const Header = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
+                    {/* <Carousel.Caption>
+                        <p className="welcome-header"> Welcome to Optilica</p>
+                    </Carousel.Caption> */}
                     <img
                         className="d-block w-100"
                         src="https://i.ibb.co/ZxGVZWJ/banner-2.jpg"
@@ -33,6 +39,9 @@ const Header = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
+                    {/* <Carousel.Caption>
+                        <p className="welcome-header"> Welcome to Optilica</p>
+                    </Carousel.Caption> */}
                     <img
                         className="d-block w-100"
                         src="https://i.ibb.co/tBn0qbT/banner-3.jpg"
