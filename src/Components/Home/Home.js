@@ -1,8 +1,8 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import Service from '../Service/Service';
-import Serveses from './../Serveses/Serveses';
+import Servises from '../Servises/Servises';
+
 
 
 
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <Serveses></Serveses>
+            <Servises></Servises>
             <Footer></Footer>
 
         </div>
