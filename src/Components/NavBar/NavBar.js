@@ -1,6 +1,6 @@
-import { faLaptopHouse } from '@fortawesome/free-solid-svg-icons';
+
 import React from 'react';
-import { Button, ButtonGroup, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Logo from '../../Images/favicon.ico'
