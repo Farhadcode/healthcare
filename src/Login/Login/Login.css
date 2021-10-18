@@ -1,0 +1,38 @@
+.fild{
+    
+    margin: 130px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px  #00263a;
+}
+.header{
+     color: #025581;
+     text-align: center;
+}
+.input-fied{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+    padding: 10px;
+    
+}
+.input{
+     margin: 10px;
+     padding: 10px;
+}
+.inputBtn{
+    margin: 10px;
+     padding: 10px;
+     background-color: rgba(7, 243, 204, 0.835);
+     outline: none;
+     border: none;
+     font-size: 16px;
+     color: black;
+     font-weight: 700;
+   
+}
+
+.inputBtn:hover{
+    background-color: #00263a; 
+    color: #fff;
+ }

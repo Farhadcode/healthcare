@@ -1,4 +1,13 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import {
+
+    getAuth,
+    signInWithPopup,
+    GoogleAuthProvider,
+    onAuthStateChanged,
+    signOut,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+} from "firebase/auth";
 import { useState, useEffect } from "react";
 import initializeAuthentication from "../Login/Firebase/firebase.init";
 
@@ -12,6 +21,18 @@ const useFirebase = () => {
 
 
     const auth = getAuth();
+
+
+    // email & password login system
+    // const emailLoginProces = (email, password) => {
+    //     signInWithEmailAndPassword(auth, email, password)
+    //         .then(result => {
+    //             const user = result.user;
+
+    //         })
+
+    // }
+
 
 
     // google singIn
