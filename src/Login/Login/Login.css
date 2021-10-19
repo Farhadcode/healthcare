@@ -1,9 +1,9 @@
 .fild{
     
-    margin: 130px;
+    margin: 30px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 5px 10px 20px  #00263a;
+     box-shadow: 5px 10px 20px  #00263a; 
 }
 .header{
      color: #025581;
@@ -12,22 +12,18 @@
 .input-fied{
     display: grid;
     grid-template-columns: 1fr;
-    margin: 20px;
+    margin: 15px;
     padding: 10px;
     
 }
 .input{
-     margin: 10px;
+     margin: 15px;
      padding: 10px;
 }
 .login-from{
     text-align: center;
 }
-.goole-login{
-    text-align: center;
-    margin: 10px;
-   
-}
+
 
 .inputBtn{
     margin: 10px;

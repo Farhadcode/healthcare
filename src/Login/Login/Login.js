@@ -4,6 +4,7 @@ import useAuth from '../../hooks/useAuth';
 import './Login.css'
 import { Button } from 'react-bootstrap';
 import './Login.css'
+import { useLocation } from 'react-router';
 
 
 const Login = () => {
@@ -11,7 +12,7 @@ const Login = () => {
 
     const { logOut, singInUserInGoogle, handleRegistration, isLogin, handleNameChange, handleEmailChange, hanndlePasswordChange, hanndleUpdatePassword, handelLogin, error, handlePasswordReset, setIsLogin } = useAuth();
 
-
+    const location = useLocation();
 
     return (
 
