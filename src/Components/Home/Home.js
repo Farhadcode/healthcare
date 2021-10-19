@@ -11,8 +11,6 @@ const Home = () => {
         <div>
             <Header></Header>
             <Servises></Servises>
-            <Footer></Footer>
-
         </div>
     );
 };

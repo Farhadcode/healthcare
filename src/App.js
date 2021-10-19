@@ -8,6 +8,7 @@ import {
 import './App.css';
 import Contect from "./Components/Contect/Contect";
 import Details from "./Components/Details/Details";
+import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import NavBar from "./Components/NavBar/NavBar";
 import NotFound from "./Components/NotFound/NotFound";
@@ -43,6 +44,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </AuthProvider>
   );
