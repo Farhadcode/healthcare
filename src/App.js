@@ -12,6 +12,7 @@ import NotFound from "./Components/NotFound/NotFound";
 import Servises from "./Components/Servises/Servises";
 import AuthProvider from "./Contexts/AuthProvider";
 import Login from "./Login/Login/Login";
+import Register from './Registers/Register';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           <Route exact path="*">
             <NotFound></NotFound>
