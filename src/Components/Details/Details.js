@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Details = () => {
     const { serviceId } = useParams();
@@ -37,7 +38,7 @@ const Details = () => {
             <div className="card-body">
                 <h5 className="card-title">{service.name}</h5>
                 <p className="card-text">{service.description}</p>
-
+                <Link to="/booking"> <button className="main-btn"> Booking </button></Link>
             </div>
         </div>
     );

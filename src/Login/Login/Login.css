@@ -1,7 +1,7 @@
 .fild{
     
     margin: 130px;
-    height: 400px;
+    height: 500px;
     border-radius: 20px;
     box-shadow: 5px 10px 20px  #00263a;
 }
@@ -20,6 +20,15 @@
      margin: 10px;
      padding: 10px;
 }
+.login-from{
+    text-align: center;
+}
+.goole-login{
+    text-align: center;
+    margin: 10px;
+   
+}
+
 .inputBtn{
     margin: 10px;
      padding: 10px;
@@ -36,7 +45,4 @@
     background-color: #00263a; 
     color: #fff;
  }
- .google-icon{
-    text-align: center;
-   
- }
+

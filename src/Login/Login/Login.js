@@ -3,8 +3,8 @@ import React from 'react';
 import useAuth from '../../hooks/useAuth';
 import './Login.css'
 import { Button } from 'react-bootstrap';
+import './Login.css'
 
-import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -19,10 +19,10 @@ const Login = () => {
 
 
 
-        <div>
+        <div className="fild">
             <div>
                 <form onSubmit={handleRegistration} className="mx-5">
-                    <h2> Please {isLogin ? 'Login' : 'Register'}</h2>
+                    <h2 className="header"> Please {isLogin ? 'Login' : 'Register'}</h2>
                     {!isLogin && <div className="row mb-3">
                         <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
                         <div className="col-sm-10">
@@ -49,40 +49,37 @@ const Login = () => {
                         </div>
                     </div>
                     }
-                    {isLogin ? (
-                        <>
-                            <button onClick={logOut}> Sign In</button>
-                            <p> Don't have an account ? <span onClick={() => setIsLogin(!isLogin)}> Register </span></p>
 
-                        </>
-                    ) : (
-                        <>
+                    <div className="login-from">
+                        {isLogin ? (
+                            <>
+                                <button className="inputBtn " onClick={logOut}> Sign In</button>
+                                <p> Don't have an account ? <span onClick={() => setIsLogin(!isLogin)}> Register </span></p>
 
-                            <button onClick={handelLogin}> Sign Up</button>
-                            <p> Have an account ? <span onClick={() => setIsLogin(!isLogin)}> LogIn </span></p>
+                            </>
+                        ) : (
+                            <>
 
-                        </>
-                    )
+                                <button className="inputBtn" onClick={handelLogin}> Sign Up</button>
+                                <p> Have an account ? <span onClick={() => setIsLogin(!isLogin)}> LogIn </span></p>
 
-                    }
-                    {/* <div className="row mb-3">
-                        <div className="col-sm-10 offset-sm-2">
-                            <div className="form-check">
-                                <input onChange={handelLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
-                                <label className="form-check-label" htmlFor="gridCheck1">
-                                    Already Registered ?
-                                </label>
-                            </div>
-                        </div>
-                    </div> */}
+                            </>
+                        )
+
+                        }
+                    </div>
+
+
                     <div className="row mb-3 text-danger"> {error}</div>
 
-                    {/* <button type="submit" className="btn btn-primary">{isLogin ? 'Login' : 'Register'}</button> */}
-                    <button onClick={handlePasswordReset}>ResetPassword</button>
+
+
                 </form>
             </div>
-            <div>
+            <div className="login-from">
                 <Button className="google-icon" onClick={singInUserInGoogle}>Google singIn</Button>
+                <Button onClick={handlePasswordReset}>ResetPassword</Button>
+
             </div>
         </div>
 

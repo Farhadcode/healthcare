@@ -19,6 +19,7 @@ const NavBar = () => {
                         <Nav className="nav-style">
                             <Link to="/home">Home</Link>
                             <Link to="/services">serveses</Link>
+                            <Link to="/booking">Booking</Link>
                             <Link to="/contect">Contect Us</Link>
                             {user?.email ?
                                 <Link to="/home"> <Button onClick={logOut} className="main-btn rounded-pill"> LogOut</Button></Link> :
