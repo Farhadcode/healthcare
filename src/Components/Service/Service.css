@@ -1,0 +1,18 @@
+.servic{
+    box-shadow:  2px 4px 12px lightgray;
+    text-align: center;
+    border-radius: 10px;
+    height: 540px;
+    width: 340px;
+    /* background-color: rgb(219, 240, 236); */
+}
+.servic-detals{
+    padding: 12px;
+    
+    /* text-align: center; */
+}
+.servic img{
+    margin-top: 15px;
+   height: 240px;
+   width: 300px;
+}

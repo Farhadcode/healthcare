@@ -12,9 +12,6 @@ const Login = () => {
     const { logOut, singInUserInGoogle, handleRegistration, isLogin, handleNameChange, handleEmailChange, hanndlePasswordChange, hanndleUpdatePassword, handelLogin, error, handlePasswordReset, setIsLogin } = useAuth();
 
 
-    // const { register, handleSubmit, formState: { errors } } = useForm();
-    // const onSubmit = data => console.log(data);
-    // onSubmit={ }
 
     return (
 

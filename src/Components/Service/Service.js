@@ -1,17 +1,24 @@
 import React from 'react';
 import './Service.css'
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
     // console.log(props);
 
-    const { name, img, description } = service;
+    const { name, img, description, id } = service;
     return (
-        <div>
+        <div className="servic">
 
             <img src={img} alt="" />
-            <h3> service {name}</h3>
-            <p>{description}</p>
-        </div>
+
+            <div className="servic-detals">
+                <h3>{name}</h3>
+                <p className="px-5">{description}</p>
+                <Link to={`/details/${id} `}>
+                    <button className="main-btn">Details</button>
+                </Link>
+            </div>
+        </div >
     );
 };
 

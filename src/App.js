@@ -7,17 +7,19 @@ import {
 
 import './App.css';
 import Contect from "./Components/Contect/Contect";
+import Details from "./Components/Details/Details";
 import Home from "./Components/Home/Home";
+import NavBar from "./Components/NavBar/NavBar";
 import NotFound from "./Components/NotFound/NotFound";
 import Servises from "./Components/Servises/Servises";
 import AuthProvider from "./Contexts/AuthProvider";
 import Login from "./Login/Login/Login";
-import Register from './Registers/Register';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
+        <NavBar></NavBar>
         <Switch>
           <Route exact path="/">
             <Home></Home>
@@ -34,8 +36,8 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/register">
-            <Register></Register>
+          <Route path="/details/:serviceId">
+            <Details></Details>
           </Route>
           <Route exact path="*">
             <NotFound></NotFound>
